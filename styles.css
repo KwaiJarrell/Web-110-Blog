@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    font-family: 'Oswald', sans-serif;
+    --background-color:#0b132b;
+    --background-accent-color:#003459;
+    --aside-background-color:#007ea7;
+    --text-color:#fff;
+    --text-accent-color:#6fffe9;
+    --button-color:#00a8e8;
+    --button-accent-color:#5bc0be;
+}
+
+
+
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header h1{
+    margin: 0;
+    padding: 1rem .5rem .5rem 10rem;
+    font-size: 64px;
+    letter-spacing: -6px;
+    color: var(--text-accent-color);
+}
+
+main h1{
+    font-weight: 400;
+    text-decoration: underline dashed var(--text-accent-color);
+}
+
+nav{
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+a{
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+a:hover{
+    color: var(--text-accent-color);
+}
+
+.content{
+    display: flex;
+    flex-direction: row; 
+}
+
+main{
+    width: 85%;
+    background: var(--background-accent-color);
+    padding: 1rem;
+}
+
+aside{
+    width: 15%;
+    background: var(--aside-background-color);
+    padding: 1rem;
+}
+
+header{
+    background-color: var(--aside-background-color);
+    margin: 1rem;
+}
+
+.button{
+    background-color: var(--button-color);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.button:hover{
+    background-color: var(--button-accent-color);
+    -webkit-transform: translateY(-3px);
+	transform: translateY(-3px);
+}
